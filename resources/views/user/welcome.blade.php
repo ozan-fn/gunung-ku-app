@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GunungKu</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=abeezee:400" rel="stylesheet" />
+
+    <style>
+        .font-abeezee {
+            font-family: 'ABeeZee', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="antialiased">
+<body class="antialiased font-abeezee">
     <div
         class="sticky shrink-0 z-10 -mb-16 container px-4 h-16 backdrop-blur-sm top-0 mx-auto flex items-center flex-row justify-between">
         <img src="{{ asset('logo.png') }}" class="h-10" alt="">
@@ -54,7 +63,7 @@
             </a>
         </div>
 
-        <a href="/login" class="bg-black py-2 px-4 rounded-lg hidden md:flex">
+        <a href="/register" class="bg-black py-2 px-4 rounded-lg hidden md:flex">
             <p class="text-white">PESAN TIKET</p>
         </a>
     </div>
