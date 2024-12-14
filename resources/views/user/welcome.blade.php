@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -18,57 +18,58 @@
 </head>
 
 <body class="antialiased font-abeezee">
-    <div
-        class="sticky shrink-0 z-10 -mb-16 container px-4 h-16 backdrop-blur-sm top-0 mx-auto flex items-center flex-row justify-between">
-        <img src="{{ asset('logo.png') }}" class="h-10" alt="">
+    <div class="bg-white/10 sticky shrink-0 z-10 -mb-16 px-4 backdrop-blur-sm top-0">
+        <div class="container mx-auto flex items-center flex-row justify-between h-16">
+            <img src="{{ asset('logo.png') }}" class="h-10" alt="">
 
-        <div class="items-center justify-between gap-16 hidden md:flex">
-            <div class="text-black">BERANDA</div>
-            <div class="text-black">INFORMASI</div>
-            <div class="text-black">PERATURAN</div>
-            <a href="#rekomendasi"
-                class="text-black relative border border-white/50 py-2 px-4 -mx-4 bg-[#FFD2BF] rounded-md">
-                <p class="text-black">REKOMENDASI PEMULA</p>
+            <div class="items-center justify-between gap-16 hidden md:flex">
+                <a href="#" class="text-black">BERANDA</a>
+                <div class="text-black">INFORMASI</div>
+                <div class="text-black">PERATURAN</div>
+                <a href="#test"
+                    class="text-black relative border border-white/50 py-2 px-4 -mx-4 bg-[#FFD2BF] rounded-md">
+                    <p class="text-black">REKOMENDASI PEMULA</p>
 
-                {{-- collapse aja --}}
-                <svg class="absolute top-0 right-0 h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify"
-                    viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0">
-                    <defs>
-                        <clipPath id="0c4b80ae52">
-                            <path
-                                d="M 30.046875 38.34375 L 355 38.34375 L 355 363.300781 L 30.046875 363.300781 Z M 30.046875 38.34375 "
-                                clip-rule="nonzero" />
-                        </clipPath>
-                        <clipPath id="40ee65149c">
-                            <path
-                                d="M 232.027344 11.636719 L 375 11.636719 L 375 154 L 232.027344 154 Z M 232.027344 11.636719 "
-                                clip-rule="nonzero" />
-                        </clipPath>
-                    </defs>
-                    <g clip-path="url(#0c4b80ae52)">
+                    {{-- collapse aja --}}
+                    <svg class="absolute top-0 right-0 h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify"
+                        viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0">
+                        <defs>
+                            <clipPath id="0c4b80ae52">
+                                <path
+                                    d="M 30.046875 38.34375 L 355 38.34375 L 355 363.300781 L 30.046875 363.300781 Z M 30.046875 38.34375 "
+                                    clip-rule="nonzero" />
+                            </clipPath>
+                            <clipPath id="40ee65149c">
+                                <path
+                                    d="M 232.027344 11.636719 L 375 11.636719 L 375 154 L 232.027344 154 Z M 232.027344 11.636719 "
+                                    clip-rule="nonzero" />
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#0c4b80ae52)">
+                            <path fill="#100f0d"
+                                d="M 192.589844 38.695312 C 188.367188 193.347656 184.9375 196.773438 30.257812 200.996094 C 184.9375 205.222656 188.367188 208.648438 192.589844 363.300781 C 196.8125 208.648438 200.238281 205.222656 354.921875 200.996094 C 200.238281 196.773438 196.8125 193.347656 192.589844 38.695312 "
+                                fill-opacity="1" fill-rule="nonzero" />
+                        </g>
                         <path fill="#100f0d"
-                            d="M 192.589844 38.695312 C 188.367188 193.347656 184.9375 196.773438 30.257812 200.996094 C 184.9375 205.222656 188.367188 208.648438 192.589844 363.300781 C 196.8125 208.648438 200.238281 205.222656 354.921875 200.996094 C 200.238281 196.773438 196.8125 193.347656 192.589844 38.695312 "
+                            d="M 46.816406 228.402344 C 45.597656 273.003906 44.609375 273.992188 0 275.207031 C 44.609375 276.425781 45.597656 277.414062 46.816406 322.015625 C 48.035156 277.414062 49.023438 276.425781 93.632812 275.207031 C 49.023438 273.992188 48.035156 273.003906 46.816406 228.402344 "
                             fill-opacity="1" fill-rule="nonzero" />
-                    </g>
-                    <path fill="#100f0d"
-                        d="M 46.816406 228.402344 C 45.597656 273.003906 44.609375 273.992188 0 275.207031 C 44.609375 276.425781 45.597656 277.414062 46.816406 322.015625 C 48.035156 277.414062 49.023438 276.425781 93.632812 275.207031 C 49.023438 273.992188 48.035156 273.003906 46.816406 228.402344 "
-                        fill-opacity="1" fill-rule="nonzero" />
-                    <g clip-path="url(#40ee65149c)">
-                        <path fill="#100f0d"
-                            d="M 303.902344 153.863281 C 305.753906 86.105469 307.253906 84.601562 375.027344 82.753906 C 307.253906 80.902344 305.753906 79.402344 303.902344 11.640625 C 302.050781 79.402344 300.550781 80.902344 232.78125 82.753906 C 300.550781 84.601562 302.050781 86.105469 303.902344 153.863281 "
-                            fill-opacity="1" fill-rule="nonzero" />
-                    </g>
-                </svg>
+                        <g clip-path="url(#40ee65149c)">
+                            <path fill="#100f0d"
+                                d="M 303.902344 153.863281 C 305.753906 86.105469 307.253906 84.601562 375.027344 82.753906 C 307.253906 80.902344 305.753906 79.402344 303.902344 11.640625 C 302.050781 79.402344 300.550781 80.902344 232.78125 82.753906 C 300.550781 84.601562 302.050781 86.105469 303.902344 153.863281 "
+                                fill-opacity="1" fill-rule="nonzero" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+            <a href="/register" class="bg-black py-2 px-4 rounded-lg hidden md:flex">
+                <p class="text-white">PESAN TIKET</p>
             </a>
         </div>
-
-        <a href="/register" class="bg-black py-2 px-4 rounded-lg hidden md:flex">
-            <p class="text-white">PESAN TIKET</p>
-        </a>
     </div>
 
-    <div class="bg-neutral-900 pt-16 h-screen bg-cover bg-fill flex flex-col overflow-hidden"
+    <div class="bg-neutral-900 h-screen bg-cover bg-fill flex flex-col overflow-hidden"
         style="background-image: url('assets/static/images/bg/background.png')">
 
         <div class="flex-grow flex">
@@ -107,7 +108,7 @@
 
     </div>
 
-    <div class="h-screen bg-[#FFD2BF] relative">
+    <div id="test" class="h-screen bg-[#FFD2BF] relative">
         <img src="{{ asset('assets/static/images/mountain-right.png') }}" class="absolute right-0 bottom-0"
             alt="">
         <img src="{{ asset('assets/static/images/mountain-bottom.png') }}" class="absolute bottom-0 left-0"
