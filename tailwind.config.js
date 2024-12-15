@@ -12,8 +12,12 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                inter: ['Inter', sans-serif],
+
             },
+            spacing: {
+                '18': '1.125rem'
+            }
         },
     },
 

@@ -5,194 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GunungKu</title>
+
+    {{-- Script Tailwind --}}
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=abeezee:400" rel="stylesheet" />
+    {{-- Google Font --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+    {{-- Fonts --}}
     <style>
-        .font-abeezee {
-            font-family: 'ABeeZee', sans-serif;
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .filter-white {
+            filter: brightness(0) invert(1);
+        }
+
+        .filter-blue-bg {
+            background: #6390cb;
+        }
+        .filter-dongker-bg {
+            background-color: #072233;
         }
     </style>
+
 </head>
 
-<body class="antialiased font-abeezee">
-    <div class="bg-white/10 sticky shrink-0 z-10 -mb-16 px-4 backdrop-blur-sm top-0">
-        <div class="container mx-auto flex items-center flex-row justify-between h-16">
-            <img src="{{ asset('logo.png') }}" class="h-10" alt="">
+<body class="antialiased font-inter">
 
-            <div class="items-center justify-between gap-16 hidden md:flex">
-                <a href="#" class="text-black">BERANDA</a>
-                <div class="text-black">INFORMASI</div>
-                <div class="text-black">PERATURAN</div>
-                <a href="#test"
-                    class="text-black relative border border-white/50 py-2 px-4 -mx-4 bg-[#FFD2BF] rounded-md">
-                    <p class="text-black">REKOMENDASI PEMULA</p>
+    <header>
 
-                    {{-- collapse aja --}}
-                    <svg class="absolute top-0 right-0 h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify"
-                        viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0">
-                        <defs>
-                            <clipPath id="0c4b80ae52">
-                                <path
-                                    d="M 30.046875 38.34375 L 355 38.34375 L 355 363.300781 L 30.046875 363.300781 Z M 30.046875 38.34375 "
-                                    clip-rule="nonzero" />
-                            </clipPath>
-                            <clipPath id="40ee65149c">
-                                <path
-                                    d="M 232.027344 11.636719 L 375 11.636719 L 375 154 L 232.027344 154 Z M 232.027344 11.636719 "
-                                    clip-rule="nonzero" />
-                            </clipPath>
-                        </defs>
-                        <g clip-path="url(#0c4b80ae52)">
-                            <path fill="#100f0d"
-                                d="M 192.589844 38.695312 C 188.367188 193.347656 184.9375 196.773438 30.257812 200.996094 C 184.9375 205.222656 188.367188 208.648438 192.589844 363.300781 C 196.8125 208.648438 200.238281 205.222656 354.921875 200.996094 C 200.238281 196.773438 196.8125 193.347656 192.589844 38.695312 "
-                                fill-opacity="1" fill-rule="nonzero" />
-                        </g>
-                        <path fill="#100f0d"
-                            d="M 46.816406 228.402344 C 45.597656 273.003906 44.609375 273.992188 0 275.207031 C 44.609375 276.425781 45.597656 277.414062 46.816406 322.015625 C 48.035156 277.414062 49.023438 276.425781 93.632812 275.207031 C 49.023438 273.992188 48.035156 273.003906 46.816406 228.402344 "
-                            fill-opacity="1" fill-rule="nonzero" />
-                        <g clip-path="url(#40ee65149c)">
-                            <path fill="#100f0d"
-                                d="M 303.902344 153.863281 C 305.753906 86.105469 307.253906 84.601562 375.027344 82.753906 C 307.253906 80.902344 305.753906 79.402344 303.902344 11.640625 C 302.050781 79.402344 300.550781 80.902344 232.78125 82.753906 C 300.550781 84.601562 302.050781 86.105469 303.902344 153.863281 "
-                                fill-opacity="1" fill-rule="nonzero" />
-                        </g>
-                    </svg>
+        {{-- Navbar --}}
+        <nav class="bg-white/10 backdrop-blur-sm sticky w-full z-20 top-0 start-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+                {{-- Logo --}}
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="font-bold text-3xl text-white">G.</span>
                 </a>
-            </div>
 
-            <a href="/register" class="bg-black py-2 px-4 rounded-lg hidden md:flex">
-                <p class="text-white">PESAN TIKET</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="bg-neutral-900 h-screen bg-cover bg-fill flex flex-col overflow-hidden"
-        style="background-image: url('assets/static/images/bg/background.png')">
-
-        <div class="flex-grow flex">
-            <div class="flex flex-col relative backdrop-blur-sm border-b border-zinc-700 flex-grow">
-                <img id="mountain-back" src="{{ asset('assets/static/images/mountain/mountain-back.png') }}"
-                    class="absolute bottom-0 left-0" alt="">
-                <img id="mountain-right" src="{{ asset('assets/static/images/mountain/mountain-right.png') }}"
-                    class="absolute right-0 bottom-0" alt="">
-                <img id="mountain-left" src="{{ asset('assets/static/images/mountain/mountain-left.png') }}"
-                    class="absolute left-0 bottom-0" alt="">
-
-                <div id="sun" class="top-1/2 left-1/2 -translate-x-[100%] -translate-y-[70%] absolute">
-                    <img src="{{ asset('assets/static/images/sun.svg') }}" class="h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72"
-                        alt="">
+                {{-- Mobile Perspective --}}
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="hidden md:block md:px-7 md:py-2 md:rounded-full md:text-white md:bg-sky-600">Login</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-14 h-14 justify-center text-md text-gray-500 rounded-lg md:hidden"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-14 h-14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
                 </div>
 
-                <img src="{{ asset('assets/static/images/cloud1.png') }}"
-                    class="absolute left-1/2 top-1/2 translate-x-[-60%] translate-y-[-30%]" alt="">
-                <img src="{{ asset('assets/static/images/cloud2.png') }}" class="absolute left-0 bottom-0"
-                    alt="">
-
-                <div class="h-screen relative container mx-auto justify-center flex flex-col">
-                    <div class="flex flex-col p-4">
-                        <p class="text-5xl font-bold">JELAJAHI DAN NIKMATI</p>
-                        <p class="text-5xl font-bold">GUNUNG</p>
-                        <p class="pt-8 ml-4">no gunung no life.</p>
-
-                        <a href="/login" class="bg-black py-2 px-4 rounded-lg w-fit mt-6 md:hidden">
-                            <p class="text-white">PESAN TIKET</p>
-                        </a>
-                    </div>
-
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-20">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+        </nav>
+        {{-- End Of Navbar --}}
+
+    </header>
+
+    <main>
+
+        {{-- Main Page --}}
+        <div class="relative mx-auto -mt-[5.5rem] md:h-screen md:w-full">
+            <img class="absolute md:w-full md:h-full object-cover z-0" src="assets/static/images/bg/backgroundUtama.jpg"
+                alt="">
+
+            <div
+                class="absolute inset-0 z-10 flex flex-col items-center justify-center text-white p-4 text-center mt-[12.5rem] md:mt-2">
+                <h4 class="text-5xl font-semibold">
+                    Escape From Reality <br> Let's Explore The World
+                </h4>
+                <p class="text-base font-medium mt-8">
+                    We provide mountain entrance ticket services throughout Indonesia
+                </p>
+                <button type="button"
+                    class="z-30 flex items-center justify-center mt-10 space-x-2 filter-blue-bg px-5 py-2 rounded-xl text-white">
+                    Book Now <img src="assets/static/images/svg-loaders/arrow-up-right-icon.svg" alt=""
+                        class="w-4 h-4 filter-white">
+                </button>
             </div>
         </div>
+        {{-- End of Main Page --}}
 
-    </div>
+        {{-- Section Mountain Rating--}}
+        <section>
+            <div class="filter-dongker-bg h-14"></div>
+        </section>
+    </main>
 
-    <div id="test" class="h-screen bg-[#FFD2BF] relative">
-        <img src="{{ asset('assets/static/images/mountain-right.png') }}" class="absolute right-0 bottom-0"
-            alt="">
-        <img src="{{ asset('assets/static/images/mountain-bottom.png') }}" class="absolute bottom-0 left-0"
-            alt="">
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
-    <script>
-        const {
-            animate,
-            scroll
-        } = Motion
-
-        const boxes = document.querySelectorAll(".box")
-
-        const duration = 2000;
-
-        animate("#mountain-right", {
-            x: ["100%", "0%"],
-            opacity: [0, 1]
-        }, {
-            duration: 2
-        });
-
-        setTimeout(() => {
-            animate("#mountain-right", {
-                x: ["5px", "0px", "5px"]
-            }, {
-                duration: 3,
-                repeat: Infinity,
-            });
-        }, duration);
-
-        animate("#mountain-left", {
-            x: ["-100%", "0%"],
-            opacity: [0, 1]
-        }, {
-            duration: 2
-        });
-
-        setTimeout(() => {
-            animate("#mountain-left", {
-                x: ["-5px", "0px", "-5px"]
-            }, {
-                duration: 3.5,
-                repeat: Infinity,
-            });
-        }, duration);
-
-        animate("#mountain-back", {
-            y: ["100%", "0%"],
-            opacity: [0, 1]
-        }, {
-            duration: 2
-        });
-
-        setTimeout(() => {
-            animate("#mountain-back", {
-                x: ["-5px", "5px", "-5px"]
-            }, {
-                duration: 2.2,
-                repeat: Infinity,
-            });
-        }, duration);
-
-        animate("#sun", {
-            y: ["100%", "-70%"],
-            x: "-100%",
-            opacity: [0, 1]
-        }, {
-            duration: 2,
-            type: 'spring'
-        });
-
-        setTimeout(() => {
-            animate("#sun", {
-                y: ["-70%", "-75%", "-70%"]
-            }, {
-                duration: 2.6,
-                repeat: Infinity,
-                direction: "alternate"
-            });
-        }, duration);
-    </script>
 </body>
 
 </html>
