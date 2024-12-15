@@ -83,7 +83,7 @@
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="password" name="password"
-                                class="form-control form-control-xl {{ $errors->has('email') ? 'is-invalid' : '' }}"
+                                class="form-control form-control-xl {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                 placeholder="Password">
                             <div {{ $errors->has('password') ? '' : 'hidden' }} class="invalid-feedback">
                                 <i class="bx bx-radio-circle"></i>

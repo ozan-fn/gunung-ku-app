@@ -17,14 +17,14 @@
     <script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
 
     <div id="app">
-        @include('partials.sidebar')
+        @include('partials.user.sidebar')
 
         <div id="main">
-            @include('partials.header')
+            @include('partials.user.header')
 
             @yield('content')
 
-            @include('partials.footer')
+            @include('partials.user.footer')
         </div>
     </div>
 
