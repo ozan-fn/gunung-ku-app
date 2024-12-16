@@ -78,8 +78,10 @@
 
                 {{-- Mobile Perspective --}}
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button"
-                        class="hidden md:block md:px-7 md:py-2 md:rounded-full md:text-white md:bg-sky-500 hover-blue-bg">Login</button>
+                    <a href="{{ route('login') }}">
+                        <button type="button"
+                            class="hidden md:block md:px-7 md:py-2 md:rounded-full md:text-white md:bg-sky-500 hover-blue-bg">Login</button>
+                    </a>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-14 h-14 justify-center text-md text-gray-500 rounded-lg md:hidden"
                         aria-controls="navbar-sticky" aria-expanded="false">
