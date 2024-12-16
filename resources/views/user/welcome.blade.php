@@ -50,6 +50,13 @@
             background-color: #25527b;
             border-color: #25527b;
         }
+
+        .hover-blue:hover {
+            color: #25527b;
+        }
+        .hover-blue-bg:hover {
+            background-color: #25527b;
+        }
     </style>
 
 </head>
@@ -71,7 +78,7 @@
                 {{-- Mobile Perspective --}}
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button"
-                        class="hidden md:block md:px-7 md:py-2 md:rounded-full md:text-white md:bg-sky-600">Login</button>
+                        class="hidden md:block md:px-7 md:py-2 md:rounded-full md:text-white md:bg-sky-500 hover-blue-bg">Login</button>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-14 h-14 justify-center text-md text-gray-500 rounded-lg md:hidden"
                         aria-controls="navbar-sticky" aria-expanded="false">
@@ -86,23 +93,23 @@
 
                 <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1">
                     <ul
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:ml-12">
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                                class="block py-2 px-3 text-white rounded md:hover:bg-transparent hover-blue md:p-0"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+                                class="block py-2 px-3 text-white rounded md:hover:bg-transparent hover-blue md:p-0">About</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                                class="block py-2 px-3 text-white rounded md:hover:bg-transparent hover-blue md:p-0 ">Services</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                                class="block py-2 px-3 text-white rounded md:hover:bg-transparent hover-blue md:p-0 ">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -138,9 +145,9 @@
         {{-- Section Services --}}
         <section class="filter-dongker-bg min-h-screen flex flex-col items-center justify-center text-white p-4 -mt-2">
             <div class="text-center mt-8">
-                <p class="my-4 text-sm filter-blue-font">Get Among Experience</p>
-                <h2 class="text-lg font-bold">Find Mountain Ticket</h2>
-                <p class="mt-1 text-slate-300">Plan your journey with our expert services</p>
+                <p class="my-4 text-sm filter-blue-font md:text-base">Get Among Experience</p>
+                <h2 class="text-lg font-bold md:text-3xl">Find Mountain Ticket</h2>
+                <p class="mt-1 text-slate-300 text-base">Plan your journey with our expert services</p>
             </div>
 
             {{-- Card for services --}}
@@ -148,7 +155,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
                     <div class="flex justify-center">
                         <div class="max-w-sm rounded-lg overflow-hidden shadow-lg text-center">
-                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-8 bg-sky-700">
+                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-4 bg-sky-700">
                                 <i class="bi bi-calendar-event text-3xl text-white"></i>
                             </div>
                             <div class="px-6 py-4">
@@ -160,7 +167,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="max-w-sm rounded-lg overflow-hidden shadow-lg text-center">
-                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-8 bg-sky-700">
+                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-4 bg-sky-700">
                                 <i class="bi bi-geo text-3xl text-white"></i>
                             </div>
                             <div class="px-6 py-4">
@@ -172,7 +179,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="max-w-sm rounded-lg overflow-hidden shadow-lg text-center">
-                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-8 bg-sky-700">
+                            <div class="border-2 blue-dark rounded-full p-4 inline-block my-4 bg-sky-700">
                                 <i class="bi bi-binoculars text-3xl text-white"></i>
                             </div>
                             <div class="px-6 py-4">
@@ -185,69 +192,63 @@
                 </div>
             </div>
         </section>
+
         {{-- End Section Services --}}
 
         {{-- Recomended Mountain --}}
-        <section class="filter-dongker-bg -mt-14 p-4">
+        <section class="filter-dongker-bg p-4 -mt-8">
             <div class="mx-auto container">
                 <div class="py-8">
-                    <p class="text-sm filter-blue-font">Popular Mountain for Beginner</p>
+                    <p class="text-sm filter-blue-font md:text-base">Popular Mountain for Beginner</p>
                     <div class="flex justify-between items-center mt-3">
-                        <h2 class="text-2xl md:text-4xl font-bold text-white">Recommended Destination</h2>
-                        <div class="flex space-x-2 gap-3 mr-8">
-                            <button id="slideLeft"
-                                class="text-2xl text-white blue-dark rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="bi bi-arrow-left"></i>
-                            </button>
-                            <button id="slideRight"
-                                class="text-2xl text-white blue-dark rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="bi bi-arrow-right"></i>
-                            </button>
-                        </div>
+                        <h2 class="text-lg md:text-3xl font-bold text-white">Recommended Destination</h2>
+                        <div class="flex space-x-2 gap-3 mr-8"> <button id="slideLeft"
+                                class="text-lg text-white blue-dark rounded-full w-10 h-10 flex items-center justify-center">
+                                <i class="bi bi-arrow-left"></i> </button> <button id="slideRight"
+                                class="text-lg text-white blue-dark rounded-full w-10 h-10 flex items-center justify-center">
+                                <i class="bi bi-arrow-right"></i> </button> </div>
                     </div>
-                </div>
-
-                {{-- Card of Mountain Content --}}
-                <div class="overflow-x-scroll flex space-x-4 mt-2">
-                    <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative">
-                        <img class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
-                            src="assets/static/images/mountain/gunungNglanggeran.jpg" alt="">
-                        <div class="absolute bottom-0 left-0 w-full px-6 py-4">
-                            <div class="font-bold text-xl text-white">Mountain Nglanggeran</div>
-                            <p class="text-base text-slate-200">Yogyakarta, Central Java</p>
+                </div> {{-- Card of Mountain Content --}} <div class="overflow-x-hidden">
+                    <div id="slider" class="flex space-x-4 mt-2 transition-transform ease-in-out duration-300">
+                        <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative"> <img
+                                class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
+                                src="assets/static/images/mountain/gunungNglanggeran.jpg" alt="">
+                            <div class="absolute bottom-0 left-0 w-full px-6 py-4">
+                                <div class="font-bold text-xl text-white">Mountain Nglanggeran</div>
+                                <p class="text-base text-slate-200">Yogyakarta, Central Java</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative">
-                        <img class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
-                            src="assets/static/images/mountain/gunungAndong.jpg" alt="">
-                        <div class="absolute bottom-0 left-0 w-full px-6 py-4">
-                            <div class="font-bold text-xl text-white">Mountain Andong</div>
-                            <p class="text-base text-slate-200">Magelang, Central Java</p>
+                        <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative"> <img
+                                class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
+                                src="assets/static/images/mountain/gunungAndong.jpg" alt="">
+                            <div class="absolute bottom-0 left-0 w-full px-6 py-4">
+                                <div class="font-bold text-xl text-white">Mountain Andong</div>
+                                <p class="text-base text-slate-200">Magelang, Central Java</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative">
-                        <img class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
-                            src="assets/static/images/mountain/gunungPrau.jpg" alt="">
-                        <div class="absolute bottom-0 left-0 w-full px-6 py-4">
-                            <div class="font-bold text-xl text-white">Mountain Prau</div>
-                            <p class="text-base text-slate-200">Dieng Central Java</p>
+                        <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative"> <img
+                                class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
+                                src="assets/static/images/mountain/gunungPrau.jpg" alt="">
+                            <div class="absolute bottom-0 left-0 w-full px-6 py-4">
+                                <div class="font-bold text-xl text-white">Mountain Prau</div>
+                                <p class="text-base text-slate-200">Dieng Central Java</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative">
-                        <img class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
-                            src="assets/static/images/mountain/gunungNglanggeran.jpg" alt="">
-                        <div class="absolute bottom-0 left-0 w-full px-6 py-4">
-                            <div class="font-bold text-xl text-white">Mountain Gede</div>
-                            <p class="text-base text-slate-200">Yogyakarta, Central Java</p>
+                        <div class="min-w-[190px] sm:min-w-[200px] max-w-xs overflow-hidden shadow-lg relative"> <img
+                                class="w-full h-80 sm:h-80 md:h-96 lg:h-[400px] object-cover"
+                                src="assets/static/images/mountain/gunungNglanggeran.jpg" alt="">
+                            <div class="absolute bottom-0 left-0 w-full px-6 py-4">
+                                <div class="font-bold text-xl text-white">Mountain Gede</div>
+                                <p class="text-base text-slate-200">Yogyakarta, Central Java</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             {{-- End of Mountain Content --}}
 
         </section>
-        {{-- End of recommended Mountain --}}
+            {{-- End of recommended Mountain --}}
 
     </main>
 
