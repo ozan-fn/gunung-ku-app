@@ -54,6 +54,7 @@
         .hover-blue:hover {
             color: #25527b;
         }
+
         .hover-blue-bg:hover {
             background-color: #25527b;
         }
@@ -248,7 +249,7 @@
             {{-- End of Mountain Content --}}
 
         </section>
-            {{-- End of recommended Mountain --}}
+        {{-- End of recommended Mountain --}}
 
     </main>
 
