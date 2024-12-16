@@ -19,8 +19,9 @@
     <div id="app">
         @include('partials.admin.sidebar')
 
-        <div id="main">
-            @include('partials.admin.header')
+        @include('partials.admin.header')
+
+        <div id="main" class="">
 
             @yield('content')
 

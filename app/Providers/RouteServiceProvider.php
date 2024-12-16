@@ -11,11 +11,9 @@ use Illuminate\Support\Facades\Route;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * The path to your application's "home" route.
-     *
      * Typically, users are redirected here after authentication.
      *
-     * @var string
+     * @return string
      */
     public const HOME = '/dashboard';
 
@@ -36,5 +34,27 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
         });
+    }
+
+    /**
+     * Get the path to the "home" route for the application.
+     *
+     * @return string
+     */
+    public static function redirectToHome()
+    {
+        $role = auth()->user()->roles->first()->name;
+
+        echo ($role);
+
+        if ($role === 'superadmin') {
+            return '/admin';
+        } elseif ($role === 'admin') {
+            return '/admin';
+        } elseif ($role === 'user') {
+            return '/dashboard';
+        }
+
+        return self::HOME;
     }
 }
