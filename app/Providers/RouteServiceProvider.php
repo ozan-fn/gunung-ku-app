@@ -48,7 +48,7 @@ class RouteServiceProvider extends ServiceProvider
         echo ($role);
 
         if ($role === 'superadmin') {
-            return '/admin';
+            return '/superadmin';
         } elseif ($role === 'admin') {
             return '/admin';
         } elseif ($role === 'user') {

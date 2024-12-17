@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/admin', function () {
     return view('admin.dashboard');
-})->middleware(['auth', 'verified', 'role:superadmin|role:admin']);
+})->middleware(['auth', 'verified', 'role:superadmin|admin']);
 // })->middleware(['auth', 'verified']);
 
 Route::get('/', function () {
